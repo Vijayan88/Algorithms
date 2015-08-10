@@ -1,0 +1,31 @@
+package pocketGems;
+
+public class Substring {
+public static void main(String[] args) {
+	String source = "abcdacdeasddede";
+	String destination = "acdef";
+	char [] sourceArray = source.toCharArray();
+	char [] targetArray = destination.toCharArray();
+	
+	int index = 0;
+	int j= 0;
+	for(int i = 0;i< source.length(); i++){
+		
+		index = i;
+		for(j = 0;j < destination.length() ; j++){
+			if(sourceArray[index] == targetArray[j]) {
+				index++;
+			}
+			else {
+				break;
+			}
+		}
+		if(j == destination.length()) {
+			System.out.println("Index "+i);
+			break;
+		}
+	}
+	
+
+}
+}
