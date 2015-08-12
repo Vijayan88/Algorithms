@@ -1,3 +1,4 @@
+package pocketGems;
 public class KMPAlgorithm {
 
     public static void main(String[] args) {
