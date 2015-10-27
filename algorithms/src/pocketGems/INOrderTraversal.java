@@ -38,7 +38,7 @@ public class INOrderTraversal {
         } else {
             TreeNode n = root;
             TreeNode q = root.parent;
-            while (q != null && q.left != n) {
+            while (q != null && q.right != n) {
                 n = q;
                 q = q.parent;
             }
